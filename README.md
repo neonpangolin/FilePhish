@@ -17,7 +17,7 @@ FilePhish currently works on:
 
 * Firefox
 
-Note: [Chrome](chrome://settings/content/popups) and [Firefox](about:preferences#privacy) users should allow [FilePhish](https://cartographia.github.io/FilePhish/) to send pop-ups and use redirects under the settings menu.
+Note: Chrome and Firefox users should allow [FilePhish](https://cartographia.github.io/FilePhish/) to send pop-ups and use redirects under the settings menu.
 
 ### Tech stack
 

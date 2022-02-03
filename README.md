@@ -5,15 +5,5 @@ A simple Google query builder for document file discovery.
 
 ### How does it work?
 Simply enter the url of the target website and a keyword, and let FilePhish do the rest of the work. 
-
-### Browser support
-FilePhish has been tested on the following browsers:
-
-• Safari
-
-• Google Chrome
-
-• Firefox
-
 - - - -
 Have fun!

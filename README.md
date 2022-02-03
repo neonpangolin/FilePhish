@@ -8,8 +8,12 @@ Simply enter the url of the target website and a keyword, and let FilePhish do t
 
 ### Browser support
 FilePhish has been tested on the following browsers:
+
 • Safari
+
 • Google Chrome
+
 • Firefox
+
 - - - -
 Have fun!

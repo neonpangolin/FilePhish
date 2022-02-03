@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="icon" href="/Users/aleksander/Documents/filephish/static/img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#fff">
+    <title>file.phish</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="/Users/aleksander/Documents/filephish/stylesheet.css" rel="stylesheet">
+    
+    <script type="text/javascript">
+        function search_documents() {
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Apdf" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Adoc" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Adocx" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Acsv" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Axls" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Axlsx" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Atxt" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Artf" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aodt" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Apptx" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Apptm" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Appt" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Axml" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aklm" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        }
+    </script>
+
+    <script type="text/javascript">
+        function search_databases() {
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aphp" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Asql" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Asqlite" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Apdb" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aidb" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Acdb" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Asis" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aodb" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+        }
+    </script>
+
+    <script type="text/javascript">
+    function search_software() {
+      window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aenv" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+      window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Acfg" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+      window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aconf" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+      window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aconfig" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+      window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Acfm" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+      window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Alog" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+      window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Ainf" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
+    }
+    </script>
+  </head>
+  
+  <body>
+    <div class="main">
+        <div class="container">
+            <img class="mb-4" src="/Users/aleksander/Documents/filephish/static/img/logo.png"alt="This is a fish" width="100" height="100">
+            <br>
+            <b>FilePhish</b>
+            <p>A simple Google query builder for document file discovery.</i></p>
+            <p>Made with ❤ by <b>Aleksander</b></p>      
+            <form>
+                <div class="form-group">
+                    <label for="site"></label>
+                    <input type="text" class="form-control" id="site" placeholder="Enter sitename">
+                </div>
+                <div class="form-group">
+                    <label for="keyword"></label>
+                    <input type="text" class="form-control" id="keyword" placeholder="Enter a keyword">
+                </div>
+            </form>
+        </div>
+        <br>
+        <div class="d-grid gap-6 col-12 mx-auto">
+            <button class="btn btn-primary" type="submit" onclick="search_documents()">Go phishing</button>
+            <br>
+            <br>
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            More filetypes
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="d-grid gap-4 col-12 mx-auto">
+              <button class="btn btn-dark" type="submit" onclick="search_databases()">Databases</button>
+              <button class="btn btn-dark" type="submit" onclick="search_software()">Software</button>
+              </div>
+            </div>     
+        </div>
+    </div>
+  </body>
+
+</html>

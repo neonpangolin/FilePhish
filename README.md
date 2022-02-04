@@ -7,6 +7,11 @@ A simple Google query builder for document file discovery
 
 Simply enter the url of the target website and a keyword, and let FilePhish do the rest of the work.
 
+### Which filetypes does FilePhish search for?
+By default, FilePhish will open a new tab with the entered sitename and keyword for: .PDF .DOCX .DOC .CSV .XLSX .TXT .RTF .ODT .PPTX .PPTM .PPT . XML .KML
+
+By selecting Databases or Software under the "More filetypes" tab, it will search for: .PHP .SQL .SQLITE .PDB .IDB .CDB .SIS .ODB and .ENV .CFG .CONF .CONFIG .CFM .LOG .INF files respectively
+
 ### Browser compatibility
 
 FilePhish currently works on:

@@ -12,106 +12,78 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link href="static/stylesheet.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
     
-    
-    <script type="text/javascript">
-        function search_documents() {
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Apdf" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Adoc" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Adocx" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Acsv" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Axls" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Axlsx" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Atxt" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Artf" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aodt" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Apptx" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Apptm" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Appt" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Axml" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aklm" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        }
-    </script>
-
-    <script type="text/javascript">
-        function search_databases() {
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aphp" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Asql" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Asqlite" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Apdb" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aidb" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Acdb" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Asis" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aodb" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-        }
-    </script>
-
-    <script type="text/javascript">
-    function search_software() {
-      window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aenv" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-      window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Acfg" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-      window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aconf" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-      window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Aconfig" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-      window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Acfm" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-      window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Alog" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-      window.open("http://google.com/search?q=site%3A" + document.getElementById('site').value + "+filetype%3Ainf" + "+%22" + document.getElementById('keyword').value+ "%22", "_blank")
-    }
-    </script>
-  </head>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
   
-  <body>
-    <div class="main">
-        <div class="container">
-            <img class="mb-4" src="static/img/logo.png" alt="This is a fish" width="100" height="100">
+    <body>
+      <div class="main">
+          <div class="container">
+              <img class="mb-4" src="static/img/logo.png" alt="This is a fish" width="100" height="100">
+              <br>
+              <b>FilePhish</b>
+              <p>A simple OSINT Google query builder for fast and easy document and file discovery.</i></p>
+              <p>Made with ❤ by <b><a href="https://twitter.com/aleksanderrr_">Aleksander</b></a>     
+              <form>
+                  <div class="form-group">
+                      <label for="site"></label>
+                      <input type="text" class="form-control" id="site" placeholder="Enter sitename">
+                  </div>
+                  <div class="form-group">
+                      <label for="keyword"></label>
+                      <input type="text" class="form-control" id="keyword" placeholder="Enter a keyword">
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="searchDocuments" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Documents</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="searchDatabases" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Databases</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="searchSoftware" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Software</label>
+                  </div>
+                  <br>
+                  <br>
+              </form>
+          </div>
+        
+          <div class="d-grid gap-6 col-12 mx-auto">
+            <button class="btn btn-primary" type="submit" onclick="search()">Go phishing</button>
+              <br>
             <br>
-            <b>FilePhish</b>
-            <p>A simple Google query builder for fast and easy document file discovery.</i></p>
-            <p>Made with ❤ by <b>Aleksander</b></p>      
-            <form>
-                <div class="form-group">
-                    <label for="site"></label>
-                    <input type="text" class="form-control" id="site" placeholder="Enter sitename">
-                </div>
-                <div class="form-group">
-                    <label for="keyword"></label>
-                    <input type="text" class="form-control" id="keyword" placeholder="Enter a keyword">
-                </div>
-            </form>
-        </div>
-        <br>
-        <div class="d-grid gap-6 col-12 mx-auto">
-            <button class="btn btn-primary" type="submit" onclick="search_documents()">Go phishing</button>
-            <br>
-            <br>
-        </div>
+          </div>
+    
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            More filetypes
-            </button>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="d-grid gap-4 col-12 mx-auto">
-            <button class="btn btn-dark" type="submit" onclick="search_databases()">Databases</button>
-            <button class="btn btn-dark" type="submit" onclick="search_software()">Software</button>
-            </div>
-          </div>  
-       <div class="container">
-              <b>How does it work?</b>
-              <p>Simply enter the url of the target website and a keyword, and let FilePhish do the rest of the work.</p>
-              <b>Which filetypes does FilePhish search for?</b>
-              <p>By default, FilePhish will open a new tab with the entered sitename and keyword for .PDF .DOCX .DOC .CSV .XLSX .TXT .RTF .ODT .PPTX .PPTM .PPT . XML .KML</p>
-              <p> By selecting Databases or Software under the More filetypes tab, it will search for.PHP .SQL .SQLITE .PDB .IDB .CDB .SIS .ODB and .ENV .CFG .CONF .CONFIG .CFM .LOG .INF files respectively</p>
-              <b>Browser compatibility</b>
-              <p>FilePhish currently works with Safari, Google Chrome and Mozilla Firefox browsers. <i>Note:</i> Chrome and Firefox users should allow FilePhish to send pop-ups and use redirects under the settings menu.</p>
-              <b>For Chrome users:</b>
-              <p>Settings > Security and privacy > Pop-ups and redirects > Add FilePhish to sites allowed to send pop-ups and use redirects.</p>
-              <b>For Firefox users:</b>
-              <p>Privacy & Security > Block pop-up windows > Exceptions</p>
-              <b>Tech stack</b>
-              <p>FilePhish is written in HTML and JavaScript. You can audit the source code <a href="https://github.com/cartographia/FilePhish">here</a></p>
-              <b>Version</b>
-              <p>v1.0.0</p>
+              What is FilePhish?
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+            <div class="container">
+                <b>How does it work?</b>
+                <p>Simply enter the url of the target website and a keyword, and let FilePhish do the rest of the work.</p>
+                <b>Which filetypes does FilePhish search for?</b>
+                <p>By default, FilePhish will open a new tab with the entered sitename and keyword for: .PDF, .DOCX, .DOC, .CSV, .XLSX, .TXT, .RTF, .ODT, .PPTX, .PPTM, .PPT, .XML and .KML files.</p>
+                <p> By selecting Databases or Software under the More filetypes tab, it will search for: .PHP, .SQL, .SQLITE, .PDB, .IDB, .CDB, .SIS, .ODB, and, .ENV, .CFG, .CONF, .CONFIG, .CFM, .LOG, and .INF files respectively.</p>
+                <b>Browser compatibility</b>
+                <p>FilePhish currently works with Safari, Google Chrome and Mozilla Firefox browsers.</p>
+                <i>Note:</i><p>Chrome and Firefox users should allow FilePhish to send pop-ups and use redirects under the settings menu.</p>
+                <b>For Chrome users:</b>
+                <p>Settings > Security and privacy > Pop-ups and redirects > add FilePhish to sites allowed to send pop-ups and use redirects.</p>
+                <b>For Firefox users:</b>
+                <p>Privacy & Security > Block pop-up windows > Exceptions > add FilePhish to the list</p>
+                <b>Tech stack</b>
+                <p>FilePhish is written entirely in HTML and JavaScript. You can audit the source code <b><a href="https://github.com/cartographia/FilePhish">here</a></b></p>
+                <p>Special thanks to <b><a href="https://twitter.com/that_funny_m8">@roach</a></b> for back-end support.</p>
+        </div>
       </div>
-    </div>
-  </body>
-</html>
+      <div class="container">
+        <b>Version</b>
+        <p>v1.0.1</p>
+      </div>
+      <script src="script.js"></script>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d850eb8d818904e',m:'DJrOftIt4M3atUXwqRpc5LRGIbFTq.g9_NF9Sv1KGts-1643989856-0-AYsWFcbMvtLlE+La+VPu3Cb3tQ3dMzgQF3bMO10H8sjouMEFhuFnJXM9jo9p9pcOysDbH6M7asZl8D5hIIfkdB4ILGMR/Dnjr/pyXX+xybffXBXoFwVx8Smh9w9YgiKpLLjulov1V0WWU5ey5saASdMIBCkfuDXFSGO+wldrXOGAJLrK/KXT7EYIbvy4H4Z7MA==',s:[0x8c5eed9ca8,0xd1b4aac9fa],}})();</script></body>
+  </html>

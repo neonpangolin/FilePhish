@@ -38,7 +38,7 @@ you can audit the audit the source code here.
 
 ### Version
 
-v1.0.0
+v1.0.1
 
 - - - -
 Have fun!

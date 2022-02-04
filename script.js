@@ -35,52 +35,45 @@ var config = {
         "inf"
     ]
 };
+//--------------------------------------------------------------
+//get checkbox elements
 var checkDocuments = document.getElementById("searchDocuments");
 var checkDatabases = document.getElementById("searchDatabases");
 var checkSoftware = document.getElementById("searchSoftware");
-var counter = 0;
 
+var counter = 0; //global counter for blocked popups
+
+//get text placeholders
 var site = document.getElementById('site');
 var keyword = document.getElementById('keyword');
 
+//--------------------------------------------------------------
 function search(){
-    counter = 0;
+    counter = 0; //reset counter on every click 
 
+    //Checking if none of the checkboxes are checked and alerts the user
     if (!checkDocuments.checked && !checkDatabases.checked && !checkSoftware.checked){
-        alert("Looks like you haven't typed anything yet!");
+        alert("You have to select at least one filetype to search for");
     }
 
-    if (checkDocuments.checked){search_documents();}
-    if (checkDatabases.checked){search_databases();}
-    if (checkSoftware.checked){search.software();}
+    //Depending on the checkbox checked, run that query with array provided
+    if (checkDocuments.checked){searchQuery(config.Documents);}
+    if (checkDatabases.checked){searchQuery(config.Databases);}
+    if (checkSoftware.checked){searchQuery(config.Software);}
+
     // Check if it detected blocked popups
     if (counter > 0){
-        alert(`Looks like ${counter} popups have been blocked, please check your browser settings and try again!`);
+        alert(`Looks like ${counter} popups might have been blocked, please check your browser settings and try again!`);
     }
 }
 
-function search_documents() {
-    config.Documents.forEach(element => {
-        if(_hasPopupBlocker(window.open(`http://google.com/search?q=site%3A${site.value}+filetype%3A${element}+%22${keyword.value}%22`, "_blank"))){
+// function takes wanted array from config and goes through it and opens tabs with wanted keyword and site
+function searchQuery(array) {
+    array.forEach(extension => { //for each extension in array, open a website with that extension
+        if(_hasPopupBlocker(window.open(`http://google.com/search?q=site%3A${site.value}+filetype%3A${extension}+%22${keyword.value}%22`, "_blank"))){
             counter += 1;
         }
     });
-}
-
-function search_databases() {
-    config.Databases.forEach(element => {
-        if(_hasPopupBlocker(window.open(`http://google.com/search?q=site%3A${site.value}+filetype%3A${element}+%22${keyword.value}%22`, "_blank"))){
-            counter += 1;
-        }
-    });
-}
-
-function search_software() {
-    config.Software.forEach(element => {
-        if(_hasPopupBlocker(window.open(`http://google.com/search?q=site%3A${site.value}+filetype%3A${element}+%22${keyword.value}%22`, "_blank"))){
-            counter += 1;
-        }
-    }); 
 }
 
 function _hasPopupBlocker(poppedWindow) {

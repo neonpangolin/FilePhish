@@ -76,13 +76,7 @@ a {
     font-size: 10pt;
   }
 
-
-  /*input[type="checkbox"] { 
-    filter: invert(100%) hue-rotate(18deg) brightness(1.7);
-  }
-  */
-
-  input[type='checkbox']{
+  .input[type='checkbox']{
     width: 10px !important;
     height: 10px !important;
     margin: 0px;
@@ -95,7 +89,7 @@ a {
     font-size: 2em;
   }
 
-  input[type='checkbox']:checked {
+  .input[type='checkbox']:checked {
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;

@@ -55,13 +55,13 @@ function search(){
     if (checkSoftware.checked){search.software();}
     // Check if it detected blocked popups
     if (counter > 0){
-        alert("Looks like ${counter} popups have been blocked, please check your browser settings and try again!");
+        alert(`Looks like ${counter} popups have been blocked, please check your browser settings and try again!`);
     }
 }
 
 function search_documents() {
     config.Documents.forEach(element => {
-        if(_hasPopupBlocker(window.open("http://google.com/search?q=site%3A${site.value}+filetype%3A${element}+%22${keyword.value}%22", "_blank"))){
+        if(_hasPopupBlocker(window.open(`http://google.com/search?q=site%3A${site.value}+filetype%3A${element}+%22${keyword.value}%22`, "_blank"))){
             counter += 1;
         }
     });
@@ -69,7 +69,7 @@ function search_documents() {
 
 function search_databases() {
     config.Databases.forEach(element => {
-        if(_hasPopupBlocker(window.open("http://google.com/search?q=site%3A${site.value}+filetype%3A${element}+%22${keyword.value}%22", "_blank"))){
+        if(_hasPopupBlocker(window.open(`http://google.com/search?q=site%3A${site.value}+filetype%3A${element}+%22${keyword.value}%22`, "_blank"))){
             counter += 1;
         }
     });
@@ -77,7 +77,7 @@ function search_databases() {
 
 function search_software() {
     config.Software.forEach(element => {
-        if(_hasPopupBlocker(window.open("http://google.com/search?q=site%3A${site.value}+filetype%3A${element}+%22${keyword.value}%22", "_blank"))){
+        if(_hasPopupBlocker(window.open(`http://google.com/search?q=site%3A${site.value}+filetype%3A${element}+%22${keyword.value}%22`, "_blank"))){
             counter += 1;
         }
     }); 

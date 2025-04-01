@@ -1,3 +1,7 @@
+# Filephish has been archived
+As of April 1, 2025, this version of Filephish has been archived. 
+Please use [Filephish v2](https://greylensresearch.github.io/filephish/) instead.
+
 # FilePhish
 A simple Google query builder for document file discovery
 
